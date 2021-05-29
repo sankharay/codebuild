@@ -7,11 +7,17 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
+    finally:
+      - echo i am under final comment
   build:
     commands:
       - echo Build started on `date`
       - echo Woo
       - grep 'Woo' index.html
+    finally:
+      - echo i am under final comment
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed on `date
+    finally:
+      - echo i am under final comment`
