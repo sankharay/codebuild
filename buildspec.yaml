@@ -21,6 +21,7 @@ phases:
       - echo Build completed on `date`
     finally:
       - echo i am under final comment final post build step
+      - printenv
 artifacts:
   files:
     - '**/*'
