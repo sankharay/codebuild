@@ -20,7 +20,7 @@ phases:
     commands:
       - echo Build completed on `date
     finally:
-      - echo i am under final comment
+      - echo i am under final comment final post build step
 artifacts:
   files:
     - '**/*'
